@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-4</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <style>
+
+        .ch {
+            position: sticky;
+            top: 0;
+            height: 50px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            z-index: 9999;
+        }
+
+
+        .content {
+            height: calc(100vh - 50px);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            font-weight: bold;
+            color: black;
+        }
+
+
+        section:nth-child(1) .ch {
+            background: red;
+        }
+        section:nth-child(1) .content {
+            background: white;
+        }
+
+        section:nth-child(2) .ch {
+            background: darkblue;
+        }
+        section:nth-child(2) .content {
+            background: lightblue;
+        }
+
+        section:nth-child(3) .ch {
+            background: black;
+        }
+        section:nth-child(3) .content {
+            background: lightgray;
+        }
+
+        section:nth-child(4) .ch {
+            background: darkred;
+        }
+        section:nth-child(4) .content {
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Card 1 -->
+<section>
+    <div class="ch">
+        <span>Card 1</span>
+    </div>
+    <div class="content">
+        <span>Hello</span>
+    </div>
+</section>
+
+<!-- Card 2 -->
+<section>
+    <div class="ch">
+        <span>Card 2</span>
+    </div>
+    <div class="content">
+        <span>How</span>
+    </div>
+</section>
+
+<!-- Card 3 -->
+<section>
+    <div class="ch">
+        <span>Card 3</span>
+    </div>
+    <div class="content">
+        <span>Are</span>
+    </div>
+</section>
+
+<!-- Card 4 -->
+<section>
+    <div class="ch">
+        <span>Card 4</span>
+    </div>
+    <div class="content">
+        <span>You?</span>
+    </div>
+</section>
+</body>
+</html>
